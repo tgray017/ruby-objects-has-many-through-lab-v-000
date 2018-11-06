@@ -21,5 +21,10 @@ class Artist
     @genres.push(genre) unless @genres.include?(genre)
   end
   
+  def songs
+    self.
+    
+  end
+  
   
 end
