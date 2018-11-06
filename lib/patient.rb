@@ -16,15 +16,11 @@ class Patient
   end
   
   def appointments
-    Appointments.all.select {|appointment| appointment.patient == self}
+    Appointment.all.select {|appointment| appointment.patient == self}
   end
   
   def doctors
-    Appointments.all.collect {|appointment| appointment.doctor if appointment.patient == self}
-  end
-  
-  def new_appointment
-    Appointments.new()
+    Appointment.all.collect {|appointment| appointment.doctor if appointment.patient == self}
   end
   
 end
