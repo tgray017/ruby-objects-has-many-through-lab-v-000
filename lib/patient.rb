@@ -7,7 +7,7 @@ class Patient
     @name = name
   end
   
-  def all
+  def self.all
     @@all
   end
   
