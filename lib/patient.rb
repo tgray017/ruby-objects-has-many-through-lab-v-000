@@ -23,4 +23,8 @@ class Patient
     Appointments.all.collect {|appointment| appointment.doctor if appointment.patient == self}
   end
   
+  def new_appointment
+    Appointments.new()
+  end
+  
 end
